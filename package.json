@@ -1,0 +1,31 @@
+{
+  "name": "sass-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktorAtanasof/sass-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViktorAtanasof/sass-practice/issues"
+  },
+  "homepage": "https://github.com/ViktorAtanasof/sass-practice#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.4",
+    "html-webpack-plugin": "^5.5.1",
+    "sass": "^1.62.1",
+    "sass-loader": "^13.3.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.84.1",
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
+  }
+}
