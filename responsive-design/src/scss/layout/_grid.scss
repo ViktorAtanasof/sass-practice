@@ -4,11 +4,10 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  gap: 40px;
-  max-width: 1000px;
+  gap: rem(40);
+  max-width: rem(1000);
   margin: 0 auto;
-  padding: 0 20px;
-  font-size: 2rem;
+  padding: 0 rem(20);
 
   @include breakpoint(lg) {
     grid-template-columns: 2fr 1fr;
@@ -17,7 +16,7 @@
 
   &__main,
   &__sidebar {
-    padding: 40px;
+    padding: rem(40);
   }
 
   &__main {

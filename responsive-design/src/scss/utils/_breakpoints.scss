@@ -1,16 +1,17 @@
-// 700px, 900px, 1440px
+@use 'functions' as *;
 
+// 700px, 900px, 1440px
 $breakpoints-up: (
-    "md": 43.75em,
-    "lg": 56.25em,
-    "xl": 90em,
+    "md": em(700),
+    "lg": em(900),
+    "xl": em(1440),
 );
 
 //699.98px, 899.98px, 1439.98px
 $breakpoints-down: (
-    "sm": 43.7485em,
-    "md": 56.24875em,
-    "lg": 89.99875em,
+    "sm": em(699.98),
+    "md": em(899.98),
+    "lg": em(1439.98),
 );
 
 @mixin breakpoint($size) {
