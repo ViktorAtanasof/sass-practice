@@ -8,6 +8,7 @@
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+  font-size: 2rem;
 
   @include breakpoint(lg) {
     grid-template-columns: 2fr 1fr;
