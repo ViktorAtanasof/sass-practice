@@ -1,3 +1,5 @@
+@use '../utils' as *;
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -7,7 +9,7 @@
   margin: 0 auto;
   padding: 0 20px;
 
-  @media (min-width: 900px) {
+  @include breakpoint(lg) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
@@ -19,9 +21,25 @@
 
   &__main {
     background-color: hsl(240, 90%, 39%);
+
+    @include breakpoint(md) {
+      background-color: hsl(120, 93%, 18%);
+    }
+
+    @include breakpoint(lg) {
+      background-color: hsl(39, 88%, 39%);
+    }
   }
 
   &__sidebar {
     background-color: hsl(300, 89%, 41%);
+    text-align: center;
+
+    @include breakpoint-down(md) {
+      text-align: center;
+    }
+    @include breakpoint-down(sm) {
+      text-align: right;
+    }
   }
 }
