@@ -1,4 +1,4 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
 .grid {
   display: grid;
@@ -32,14 +32,16 @@
   }
 
   &__sidebar {
-    background-color: hsl(300, 89%, 41%);
     text-align: center;
+  }
 
-    @include breakpoint-down(md) {
-      text-align: center;
-    }
-    @include breakpoint-down(sm) {
-      text-align: right;
+  &__widget {
+    background-color: hsl(300, 89%, 41%);
+    padding: rem(16);
+
+    &--green {
+      @extend .grid__widget;
+      background-color: hsl(120, 87%, 27%);
     }
   }
 }
