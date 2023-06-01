@@ -1,4 +1,4 @@
-@use "../utils" as *;
+@use "index" as *;
 
 .grid {
   display: grid;
@@ -39,7 +39,7 @@
     background-color: hsl(300, 89%, 41%);
     padding: rem(16);
 
-    &--green {
+    &.green {
       @extend .grid__widget;
       background-color: hsl(120, 87%, 27%);
     }
